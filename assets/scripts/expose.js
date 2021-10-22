@@ -11,22 +11,17 @@ var typehorn = document.querySelector('#horn-select');
  var hornaudio = document.querySelector('hidden');
  if(typehorn.value == 'air-horn'){
    img_ref.src = 'assets/images/air-horn.svg';
-   hornaudio.src = 'assets/audio/air-horn.mp3';
  } else if (typehorn.value == 'car-horn'){
    img_ref.src = 'assets/images/car-horn.svg';
-   hornaudio.src = 'assets/audio/car-horn.mp3';
  } else if (typehorn.value == 'party-horn'){
    img_ref.src = 'assets/images/party-horn.svg';
-   hornaudio.src = 'assets/audio/party-horn.mp3';
  }
 }
 function sliderchg(){
-console.log('hi');
 var vol = document.querySelector('#volume-controls');
 var volume = vol.children[0];
 var volnum = volume.value;
 var volimg = vol.children[1];
-console.log(volnum);
 if(volnum <= 0){
   volimg.src = 'assets/icons/volume-level-0.svg';
 }else if (volnum > 0 && volnum < 33){
